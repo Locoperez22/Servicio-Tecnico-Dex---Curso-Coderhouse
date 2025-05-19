@@ -1,0 +1,414 @@
+body {
+    background-image: url(../assets/imgs/fondoweb2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Aseguramos que el header ocupe el 100% por defecto */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-links a {
+    margin: 0 10px;
+}
+
+.image-links img {
+    max-width: 800px;
+    max-height: 600px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; /* Aseguramos que el footer ocupe el 100% por defecto */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info i {
+    margin: 0 10px;
+}
+
+main.page-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio de la columna */
+    margin-left: 20%;
+}
+
+.content-left h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.content-left p {
+    font-family: 'Futura', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    max-width: 50%; /* Ajusta el ancho máximo de los párrafos */
+}
+
+.content-right {
+    width: 35%;
+}
+
+.content-right img {
+    max-width: 100%;
+    max-height: 800px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Estilos para pantallas de 1024px */
+@media (width: 1024px) {
+    header {
+        width: 100vw;
+        padding: 15px 0; /* Ajusta el padding si es necesario */
+    }
+
+    .header-content {
+        flex-direction: column; /* Logo y título en vertical */
+        align-items: center;
+        margin-bottom: 15px; /* Ajusta el margen inferior */
+    }
+
+    header .logo {
+        max-height: 80px; /* Ajusta el tamaño del logo */
+        margin-right: 0;
+        margin-bottom: 10px; /* Espacio entre logo y título */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del título */
+        margin-bottom: 15px; /* Espacio entre título y nav */
+    }
+
+    nav ul {
+        flex-direction: row; /* Navegación en horizontal */
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    .image-links {
+        display: flex; /* Esto podría estar afectando la disposición vertical, lo ajustaremos */
+        flex-direction: column; /* Organizamos los enlaces verticalmente */
+        align-items: center; /* Centramos horizontalmente los enlaces */
+        margin-top: 20px;
+    }
+
+    .image-links a {
+        display: block; /* Hacemos que los enlaces ocupen todo el ancho disponible */
+        margin: 10px 0; /* Espacio vertical entre los enlaces */
+        overflow: hidden; /* Importante para el recorte */
+        width: 1024px; /* Ancho deseado para las imágenes aumentadas */
+        height: 400px; /* Altura deseada para la parte superior recortada (ajusta según necesites) */
+    }
+
+    .image-links img {
+        width: 2000px; /* El doble del ancho del contenedor para simular el recorte y permitir aumento */
+        height: 800px; /* El doble de la altura del contenedor */
+        object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+        object-position: top center; /* Muestra la parte superior central de la imagen */
+    }
+}
+
+/* Estilos para pantallas de 768px */
+@media (width: 768px) {
+    header {
+        width: 100vw;
+        padding: 15px 0; /* Ajusta el padding si es necesario */
+    }
+
+    .header-content {
+        flex-direction: column; /* Logo y título en vertical */
+        align-items: center;
+        margin-bottom: 15px; /* Ajusta el margen inferior */
+    }
+
+    header .logo {
+        max-height: 80px; /* Ajusta el tamaño del logo */
+        margin-right: 0;
+        margin-bottom: 10px; /* Espacio entre logo y título */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del título */
+        margin-bottom: 15px; /* Espacio entre título y nav */
+    }
+
+    nav ul {
+        flex-direction: row; /* Navegación en horizontal */
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    .image-links {
+        display: flex; /* Esto podría estar afectando la disposición vertical, lo ajustaremos */
+        flex-direction: column; /* Organizamos los enlaces verticalmente */
+        align-items: center; /* Centramos horizontalmente los enlaces */
+        margin-top: 20px;
+    }
+
+    .image-links a {
+        display: block; /* Hacemos que los enlaces ocupen todo el ancho disponible */
+        margin: 10px 0; /* Espacio vertical entre los enlaces */
+        overflow: hidden; /* Importante para el recorte */
+        width: 768px; /* Ancho deseado para las imágenes aumentadas */
+        height: 400px; /* Altura deseada para la parte superior recortada (ajusta según necesites) */
+    }
+
+    .image-links img {
+        width: 1300px; /* El doble del ancho del contenedor para simular el recorte y permitir aumento */
+        height: 800px; /* El doble de la altura del contenedor */
+        object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+        object-position: top center; /* Muestra la parte superior central de la imagen */
+    }
+}
+
+
+/* Estilos para pantallas más grandes de 768px */
+@media (min-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    header .logo {
+        max-height: 50px;
+        margin-right: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Navegación horizontal */
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+
+    .image-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .image-links img {
+        max-width: 800px;
+        max-height: 600px;
+    }
+}
+
+/* Estilos para pantallas de hasta 768px */
+@media (max-width: 767px) {
+    header {
+        width: 100vw;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        max-height: 100px;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .image-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-links a {
+        margin: 15px 0;
+    }
+
+    .image-links img {
+        max-width: 95%;
+        max-height: auto;
+    }
+}
+
+/* Estilos para pantallas de hasta 767px  */
+@media (max-width: 767px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        max-height: 80px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        display: none; /* Oculte la navegación en pantallas muy pequeñas */
+    }
+
+    .image-links img {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 5px 0;
+        font-size: 0.7em;
+    }
+
+    .contact-item {
+        font-size: 0.7em;
+        margin: 2px 0;
+    }
+}
