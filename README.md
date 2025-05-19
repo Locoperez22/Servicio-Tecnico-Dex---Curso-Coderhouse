@@ -1,0 +1,1 @@
+Mi proyecto es sobre servicio tenico. Cuenta con un formato sencillo. Y en cuanto a lo responsive llegue a realizar solo la pagina del Index, ya que me mude de La Plata a Mar del plata y estoy con un monton de cambios, sin internet y acomodando mi nuevo hogar para que sea funcional.
