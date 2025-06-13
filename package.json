@@ -1,0 +1,19 @@
+{
+  "name": "servicio-tecnico-dex",
+  "version": "1.0.0",
+  "description": "Mi proyecto es sobre servicio tenico. Cuenta con un formato sencillo. Y en cuanto a lo responsive llegue a realizar solo la pagina del Index, ya que me mude de La Plata a Mar del plata y estoy con un monton de cambios, sin internet y acomodando mi nuevo hogar para que sea funcional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Locoperez22/Servicio-Tecnico-Dex---Curso-Coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Locoperez22/Servicio-Tecnico-Dex---Curso-Coderhouse/issues"
+  },
+  "homepage": "https://github.com/Locoperez22/Servicio-Tecnico-Dex---Curso-Coderhouse#readme"
+}
